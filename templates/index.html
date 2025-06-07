@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Face Attendance System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>🎓 Face Attendance System</h1>
+
+    <form action="/mark" method="post">
+        <button class="button" type="submit">📸 Mark Attendance</button>
+    </form>
+
+    <form action="/view" method="get">
+        <button class="button" type="submit">📄 View Attendance CSV</button>
+    </form>
+</body>
+</html>
